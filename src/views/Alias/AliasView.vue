@@ -34,7 +34,7 @@
 import axios from "axios";
 import {onMounted, ref} from "vue";
 import type {IAlias} from "@/models/Alias.types";
-import {environment} from "@/environments/environment.dev";
+import {environment} from "@/environments/environment";
 
 const aliases = ref<IAlias[]>([])
 

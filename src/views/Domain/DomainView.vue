@@ -35,7 +35,7 @@
 import axios from "axios";
 import {onMounted, ref} from "vue";
 import type {IDomain} from "@/models/Domain.types";
-import {environment} from "@/environments/environment.dev";
+import {environment} from "@/environments/environment";
 
 const domains = ref<IDomain[]>([])
 

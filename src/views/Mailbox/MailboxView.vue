@@ -42,7 +42,7 @@
 import axios from "axios";
 import {onMounted, ref} from "vue";
 import type {IMailbox} from "@/models/Mailbox.types";
-import {environment} from "@/environments/environment.dev";
+import {environment} from "@/environments/environment";
 
 const mailboxes = ref<IMailbox[]>([])
 
