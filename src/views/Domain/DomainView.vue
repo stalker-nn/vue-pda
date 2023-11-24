@@ -41,8 +41,10 @@ const domains = ref<IDomain>([])
 onMounted(() => {
   axios.get('http://pda-api/api/domains')
       .then(res => {
-        //console.log(res.data)
         domains.value = res.data
+      })
+      .catch(error => {
+        console.log(error)
       })
 })
 </script>
