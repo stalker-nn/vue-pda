@@ -34,10 +34,10 @@
 <script setup lang="ts">
 import axios from "axios";
 import {onMounted, ref} from "vue";
-import {IDomain} from "@/models/Domain.types";
+import type {IDomain} from "@/models/Domain.types";
 import {environment} from "@/environments/environment.dev";
 
-const domains = ref<IDomain>([])
+const domains = ref<IDomain[]>([])
 
 onMounted(() => {
   axios.get(`${environment.apiUrl}/api/domains`)

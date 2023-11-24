@@ -17,7 +17,7 @@ import Sidenav from './Sidenav.vue'
 import Navigation from './Navigation.vue'
 import Preloader from './Preloader.vue'
 import {ref} from "vue";
-import {IMenu} from "@/App.types";
+import type {IMenu} from "@/App.types";
 
 const menuItems = ref<IMenu[]>([
   { id: 1, title: 'Home', path: '/', icon: 'mdi-home' },

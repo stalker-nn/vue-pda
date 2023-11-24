@@ -41,10 +41,10 @@
 <script setup lang="ts">
 import axios from "axios";
 import {onMounted, ref} from "vue";
-import {IMailbox} from "@/models/Mailbox.types";
+import type {IMailbox} from "@/models/Mailbox.types";
 import {environment} from "@/environments/environment.dev";
 
-const mailboxes = ref<IMailbox>([])
+const mailboxes = ref<IMailbox[]>([])
 
 onMounted(() => {
   axios.get(`${environment.apiUrl}/api/mailboxes`)

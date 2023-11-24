@@ -33,10 +33,10 @@
 <script setup lang="ts">
 import axios from "axios";
 import {onMounted, ref} from "vue";
-import {IAlias} from "@/models/Alias.types";
+import type {IAlias} from "@/models/Alias.types";
 import {environment} from "@/environments/environment.dev";
 
-const aliases = ref<IAlias>([])
+const aliases = ref<IAlias[]>([])
 
 onMounted(() => {
   axios.get(`${environment.apiUrl}/api/aliases`)
