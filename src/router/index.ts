@@ -19,7 +19,6 @@ const router = createRouter({
       component: DashboardView,
       meta : {
         layout: DashboardLayout,
-        title: 'Dashboard title'
       }
     },
     {
@@ -28,7 +27,6 @@ const router = createRouter({
       component: LoginView,
       meta : {
         layout: LoginLayout,
-        title: 'Login title'
       }
     },
     {
@@ -37,7 +35,6 @@ const router = createRouter({
       component: DomainView,
       meta : {
         layout: DashboardLayout,
-        title: 'Domains title'
       }
     },
     {
@@ -46,7 +43,6 @@ const router = createRouter({
       component: MailboxView,
       meta : {
         layout: DashboardLayout,
-        title: 'Mailboxes title'
       }
     },
     {
@@ -55,7 +51,6 @@ const router = createRouter({
       component: AliasView,
       meta : {
         layout: DashboardLayout,
-        title: 'Aliases title'
       }
     },
     {
@@ -64,7 +59,6 @@ const router = createRouter({
       component: ErrorView,
       meta : {
         layout: ErrorLayout,
-        title: 'Error title'
       }
     }
   ]
