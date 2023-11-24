@@ -42,11 +42,12 @@
 import axios from "axios";
 import {onMounted, ref} from "vue";
 import {IMailbox} from "@/models/Mailbox.types";
+import {environment} from "@/environments/environment.dev";
 
 const mailboxes = ref<IMailbox>([])
 
 onMounted(() => {
-  axios.get('http://pda-api/api/mailboxes')
+  axios.get(`${environment.apiUrl}/api/mailboxes`)
       .then(res => {
         mailboxes.value = res.data
       })

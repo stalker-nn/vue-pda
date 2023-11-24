@@ -35,11 +35,12 @@
 import axios from "axios";
 import {onMounted, ref} from "vue";
 import {IDomain} from "@/models/Domain.types";
+import {environment} from "@/environments/environment.dev";
 
 const domains = ref<IDomain>([])
 
 onMounted(() => {
-  axios.get('http://pda-api/api/domains')
+  axios.get(`${environment.apiUrl}/api/domains`)
       .then(res => {
         domains.value = res.data
       })

@@ -34,11 +34,12 @@
 import axios from "axios";
 import {onMounted, ref} from "vue";
 import {IAlias} from "@/models/Alias.types";
+import {environment} from "@/environments/environment.dev";
 
 const aliases = ref<IAlias>([])
 
 onMounted(() => {
-  axios.get('http://pda-api/api/aliases')
+  axios.get(`${environment.apiUrl}/api/aliases`)
       .then(res => {
         aliases.value = res.data
       })
