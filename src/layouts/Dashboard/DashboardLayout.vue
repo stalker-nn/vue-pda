@@ -13,9 +13,9 @@
 </template>
 
 <script setup lang="ts">
-import Navigation from "@/components/layout/Navigation.vue";
-import Sidenav from "@/components/layout/Sidenav.vue";
-import Preloader from "@/components/layout/Preloader.vue";
+import Sidenav from './Sidenav.vue'
+import Navigation from './Navigation.vue'
+import Preloader from './Preloader.vue'
 import {ref} from "vue";
 import {IMenu} from "@/App.types";
 

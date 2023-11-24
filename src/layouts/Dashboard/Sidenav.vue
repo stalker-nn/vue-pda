@@ -9,7 +9,7 @@
     <v-divider></v-divider>
 
     <v-list nav>
-      <v-list-item v-for="item in menuItems" :prepend-icon="item.icon" link>
+      <v-list-item v-for="item in menuItems" :prepend-icon="item.icon" link :key="item.id">
         <v-list-item-title>
           <router-link :to="item.path">{{ item.title }}</router-link>
         </v-list-item-title>
