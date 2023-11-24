@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-center justify-center" style="height: 100vh">
+  <div class="d-flex align-center justify-center login-form-container">
     <v-sheet width="400" class="bg-grey pa-5" rounded>
       <v-card class="mx-auto px-6 py-8" max-width="400" title="Sign In">
         <v-form fast-fail @submit.prevent="login">
@@ -24,5 +24,7 @@ function login() {
 </script>
 
 <style scoped>
-
+.login-form-container {
+  height: 100vh;
+}
 </style>

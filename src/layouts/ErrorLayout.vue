@@ -1,6 +1,5 @@
 <template>
   <div>
-    Error 404
     <router-view></router-view>
   </div>
 </template>

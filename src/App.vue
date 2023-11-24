@@ -9,7 +9,7 @@ import {computed} from "vue";
 const route = useRoute()
 
 const layout = computed(() => {
-  return route.meta.layout || 'default'
+  return route.meta.layout || 'DefaultLayout'
 })
 </script>
 
